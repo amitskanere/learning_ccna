@@ -1,0 +1,9 @@
+we can make router as our dhcp server hence whenever we are making dhcp server 
+then we should give a ip address of that interface which is conected to lan 
+
+
+
+
+Router(config)#ip dhcp pool amits_ip
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
